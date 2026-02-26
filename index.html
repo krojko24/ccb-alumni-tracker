@@ -369,7 +369,7 @@
 // CONFIG — update these URLs to point to your published Google Sheet CSVs
 // After uploading to Google Sheets: File → Share → Publish to web → CSV
 // ─────────────────────────────────────────────────────────────────────────────
-const COLLEGE_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTGiuaTekEcpysKzsz_cPFKjHgak--D4TnQKKlo8zgyqqTMaym79i3qy7068qZA7ryV0cepeHBNBMbU/pub?output=csv";
+const COLLEGE_CSV_URL = "YOUR_COLLEGE_STATS_CSV_URL_HERE";
 const PRO_CSV_URL     = "YOUR_PRO_STATS_CSV_URL_HERE";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -558,16 +558,31 @@ function filterTable(section, filter, btn) {
 }
 
 // ── Load CSVs ─────────────────────────────────────────────────────────────────
-function proxyUrl(url) {
-    return `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+async function fetchCSV(url) {
+    const proxies = [
+        u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
+        u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+        u => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`,
+    ];
+    for (const proxy of proxies) {
+        try {
+            const res = await fetch(proxy(url));
+            if (res.ok) {
+                const text = await res.text();
+                if (text.includes(",")) return text; // sanity check it looks like CSV
+            }
+        } catch(e) {
+            // try next proxy
+        }
+    }
+    throw new Error("All proxies failed");
 }
 
 async function loadData() {
   try {
     // College
-    const colRes = await fetch(proxyUrl(COLLEGE_CSV_URL));
-    if (colRes.ok) {
-      const text = await colRes.text();
+    const text = await fetchCSV(COLLEGE_CSV_URL);
+    if (text) {
       collegeData = parseCSV(text);
       renderTable('collegeTable','collegeHead','collegeBody', collegeData, true);
 
@@ -591,9 +606,9 @@ async function loadData() {
 
   try {
     // Pro
-    const proRes = await fetch(proxyUrl(PRO_CSV_URL));
-    if (proRes.ok) {
-      const text = await proRes.text();
+    const proText = await fetchCSV(PRO_CSV_URL);
+    if (proText) {
+      const text = proText;
       proData = parseCSV(text);
       renderTable('proTable','proHead','proBody', proData, false);
     }
@@ -616,6 +631,9 @@ document.addEventListener('click', function(e) {
 
 loadData();
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
