@@ -287,6 +287,17 @@
       white-space: nowrap;
     }
 
+    /* ── Sortable column headers ── */
+    thead th.sortable {
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+      transition: color 0.15s;
+    }
+    thead th.sortable:hover { color: var(--gold2); }
+    thead th.sort-asc::after  { content: ' ▲'; font-size: 9px; color: var(--gold); }
+    thead th.sort-desc::after { content: ' ▼'; font-size: 9px; color: var(--gold); }
+
     /* Stat highlight — top values */
     .stat-highlight { color: var(--gold2); font-weight: 700; }
 
@@ -493,6 +504,26 @@ function parseCSV(text) {
   });
 }
 
+// ── Sort state per sub-table ─────────────────────────────────────────────────
+const sortState = {};
+
+function lastName(name) {
+  const parts = (name || '').trim().split(' ');
+  return parts[parts.length - 1].toLowerCase();
+}
+
+function sortRows(rows, key, dir) {
+  return [...rows].sort((a, b) => {
+    if (key === 'Name') {
+      const la = lastName(a.Name), lb = lastName(b.Name);
+      return dir === 'asc' ? la.localeCompare(lb) : lb.localeCompare(la);
+    }
+    const va = parseFloat(a[key]) || 0;
+    const vb = parseFloat(b[key]) || 0;
+    return dir === 'asc' ? va - vb : vb - va;
+  });
+}
+
 // ── Render a single sub-table (hitters OR pitchers) ─────────────────────────
 function renderSubTable(headId, bodyId, rows, cols, isCollege, emptyMsg) {
   const thead = document.getElementById(headId);
@@ -504,12 +535,34 @@ function renderSubTable(headId, bodyId, rows, cols, isCollege, emptyMsg) {
     return;
   }
 
-  const baseCols = isCollege
-    ? `<th>Player</th><th>Lvl</th><th>Pos</th>`
-    : `<th>Player</th><th>Org</th><th>League</th><th>Pos</th>`;
-  thead.innerHTML = `<tr>${baseCols}${cols.map(c=>`<th class="num">${c.label}</th>`).join('')}</tr>`;
+  // Default sort: last name ascending
+  if (!sortState[bodyId]) sortState[bodyId] = { key: 'Name', dir: 'asc' };
+  const { key, dir } = sortState[bodyId];
+  const sorted = sortRows(rows, key, dir);
 
-  tbody.innerHTML = rows.map(r => {
+  // Build header with sortable th elements
+  const makeBaseThs = () => {
+    const playerTh = `<th class="sortable${key==='Name' ? (dir==='asc' ? ' sort-asc' : ' sort-desc') : ''}"
+      data-head="${headId}" data-body="${bodyId}" data-key="Name"
+      data-rows='${encodeURIComponent(JSON.stringify(rows))}'>Player</th>`;
+    if (isCollege) {
+      return playerTh + `<th>Lvl</th><th>Pos</th>`;
+    } else {
+      return playerTh + `<th>Org</th><th>League</th><th>Pos</th>`;
+    }
+  };
+
+  const makeStatThs = () => cols.map(c => {
+    const active = key === c.key;
+    return `<th class="num sortable${active ? (dir==='asc' ? ' sort-asc' : ' sort-desc') : ''}"
+      data-head="${headId}" data-body="${bodyId}" data-key="${c.key}"
+      data-rows='${encodeURIComponent(JSON.stringify(rows))}'>${c.label}</th>`;
+  }).join('');
+
+  thead.innerHTML = `<tr>${makeBaseThs()}${makeStatThs()}</tr>`;
+
+  // Render body
+  tbody.innerHTML = sorted.map(r => {
     const baseColsHtml = isCollege
       ? `<td>
            <div class="player-name">${r.Name || ''}</div>
@@ -615,6 +668,79 @@ async function loadData() {
   }
 }
 
+// ── Event delegation for sortable column headers ─────────────────────────────
+document.addEventListener('click', function(e) {
+  const th = e.target.closest('th.sortable');
+  if (!th) return;
+  const headId = th.dataset.head;
+  const bodyId = th.dataset.body;
+  const key    = th.dataset.key;
+  const rows   = JSON.parse(decodeURIComponent(th.dataset.rows));
+
+  const prev = sortState[bodyId] || { key: 'Name', dir: 'asc' };
+  const dir  = (prev.key === key && prev.dir === 'asc') ? 'desc' : 'asc';
+  sortState[bodyId] = { key, dir };
+
+  // Re-render just this sub-table — find its config from the thead
+  // Trigger a re-render by dispatching a custom event
+  document.getElementById(bodyId).dispatchEvent(
+    new CustomEvent('ccb-sort', { detail: { headId, bodyId, rows, key, dir } })
+  );
+});
+
+// Listen for sort events on each tbody
+['collegeHitBody','collegePitBody','proHitBody','proPitBody'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('ccb-sort', function(e) {
+    const { rows } = e.detail;
+    const { key, dir } = sortState[id];
+    const sorted = sortRows(rows, key, dir);
+    // Rebuild just the body rows preserving the existing thead
+    const tbody = document.getElementById(id);
+    const thead = document.getElementById(id.replace('Body','Head'));
+    // Update sort indicators on headers
+    thead.querySelectorAll('th.sortable').forEach(th => {
+      th.classList.remove('sort-asc','sort-desc');
+      if (th.dataset.key === key) th.classList.add(dir === 'asc' ? 'sort-asc' : 'sort-desc');
+    });
+    // Re-render rows
+    const isCollege = id.startsWith('college');
+    const isHitting = id.includes('Hit');
+    const cols = isCollege
+      ? (isHitting ? COL_HIT_COLS : COL_PIT_COLS)
+      : (isHitting ? PRO_HIT_COLS : PRO_PIT_COLS);
+
+    tbody.innerHTML = sorted.map(r => {
+      const baseColsHtml = isCollege
+        ? `<td>
+             <div class="player-name">${r.Name || ''}</div>
+             <div class="player-team">${r.Team || ''}</div>
+           </td>
+           <td><span class="level-badge level-${r.Level}">${r.Level || ''}</span></td>
+           <td><span class="type-badge">${r.Position || ''}</span></td>`
+        : `<td>
+             <div class="player-name">${r.Name || ''}</div>
+             <div class="player-team">${r.Team || ''}</div>
+           </td>
+           <td style="color:var(--muted);font-size:13px">${r.Org || ''}</td>
+           <td style="color:var(--muted);font-size:13px">${r.League || ''}</td>
+           <td><span class="type-badge">${r.Position || ''}</span></td>`;
+
+      const statCols = cols.map(c => {
+        const val = r[c.key] || '—';
+        const isHighlight = (c.key === 'AVG'  && parseFloat(val) >= 0.350)
+                         || (c.key === 'HR'   && parseInt(val)   >= 5)
+                         || (c.key === 'ERA'  && parseFloat(val) <= 2.50 && val !== '—')
+                         || (c.key === 'OPS'  && parseFloat(val) >= 0.900)
+                         || (c.key === 'WHIP' && parseFloat(val) <= 1.10 && val !== '—');
+        return `<td class="num ${isHighlight ? 'stat-highlight' : ''}">${val}</td>`;
+      }).join('');
+
+      return `<tr>${baseColsHtml}${statCols}</tr>`;
+    }).join('');
+  });
+});
+
 // ── Event delegation for filter buttons (avoids WordPress stripping onclick) ──
 document.addEventListener('click', function(e) {
   const btn = e.target.closest('.filter-btn');
@@ -628,9 +754,6 @@ document.addEventListener('click', function(e) {
 
 loadData();
 </script>
-
-</body>
-</html>
 
 </body>
 </html>
