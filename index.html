@@ -268,6 +268,25 @@
       color: var(--muted);
     }
 
+    /* ── Sub-section headers (Hitters / Pitchers) ── */
+    .sub-section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+      margin-top: 28px;
+    }
+
+    .sub-section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
     /* Stat highlight — top values */
     .stat-highlight { color: var(--gold2); font-weight: 700; }
 
@@ -321,9 +340,7 @@
   </div>
 
   <div class="filter-bar" id="collegeFilters">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="Hitting">Hitters</button>
-    <button class="filter-btn" data-filter="Pitching">Pitchers</button>
+    <button class="filter-btn active" data-filter="all">All Levels</button>
     <button class="filter-btn" data-filter="D1">D1</button>
     <button class="filter-btn" data-filter="D2">D2</button>
     <button class="filter-btn" data-filter="D3">D3</button>
@@ -331,10 +348,25 @@
     <button class="filter-btn" data-filter="JC">JC</button>
   </div>
 
+  <div class="sub-section-header">
+    <span class="sub-section-title">Hitters</span>
+    <div class="section-line"></div>
+  </div>
   <div class="table-wrap">
-    <table id="collegeTable">
-      <thead id="collegeHead"></thead>
-      <tbody id="collegeBody"><tr><td colspan="20"><div class="empty-state">Loading...</div></td></tr></tbody>
+    <table id="collegeHitTable">
+      <thead id="collegeHitHead"></thead>
+      <tbody id="collegeHitBody"><tr><td colspan="20"><div class="empty-state">Loading...</div></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="sub-section-header" style="margin-top:36px;">
+    <span class="sub-section-title">Pitchers</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="table-wrap">
+    <table id="collegePitTable">
+      <thead id="collegePitHead"></thead>
+      <tbody id="collegePitBody"><tr><td colspan="20"><div class="empty-state">Loading...</div></td></tr></tbody>
     </table>
   </div>
 
@@ -345,16 +377,25 @@
     <div class="section-line"></div>
   </div>
 
-  <div class="filter-bar" id="proFilters">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="Hitting">Hitters</button>
-    <button class="filter-btn" data-filter="Pitching">Pitchers</button>
+  <div class="sub-section-header">
+    <span class="sub-section-title">Hitters</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="table-wrap">
+    <table id="proHitTable">
+      <thead id="proHitHead"></thead>
+      <tbody id="proHitBody"><tr><td colspan="20"><div class="empty-state">Pro season stats will appear here once the season begins.</div></td></tr></tbody>
+    </table>
   </div>
 
+  <div class="sub-section-header" style="margin-top:36px;">
+    <span class="sub-section-title">Pitchers</span>
+    <div class="section-line"></div>
+  </div>
   <div class="table-wrap">
-    <table id="proTable">
-      <thead id="proHead"></thead>
-      <tbody id="proBody"><tr><td colspan="20"><div class="empty-state">Loading...</div></td></tr></tbody>
+    <table id="proPitTable">
+      <thead id="proPitHead"></thead>
+      <tbody id="proPitBody"><tr><td colspan="20"><div class="empty-state">Pro season stats will appear here once the season begins.</div></td></tr></tbody>
     </table>
   </div>
 
@@ -452,43 +493,23 @@ function parseCSV(text) {
   });
 }
 
-// ── Render a table ────────────────────────────────────────────────────────────
-function renderTable(tableId, headId, bodyId, rows, isCollege) {
+// ── Render a single sub-table (hitters OR pitchers) ─────────────────────────
+function renderSubTable(headId, bodyId, rows, cols, isCollege, emptyMsg) {
+  const thead = document.getElementById(headId);
+  const tbody = document.getElementById(bodyId);
+
   if (!rows.length) {
-    document.getElementById(bodyId).innerHTML =
-      `<tr><td colspan="20"><div class="empty-state">No stats available yet — check back soon.</div></td></tr>`;
+    thead.innerHTML = '';
+    tbody.innerHTML = `<tr><td colspan="20"><div class="empty-state">${emptyMsg}</div></td></tr>`;
     return;
   }
 
-  // Separate hitting vs pitching rows
-  const hitRows = rows.filter(r => r.Type === "Hitting");
-  const pitRows = rows.filter(r => r.Type === "Pitching");
-  const hitCols = isCollege ? COL_HIT_COLS : PRO_HIT_COLS;
-  const pitCols = isCollege ? COL_PIT_COLS : PRO_PIT_COLS;
+  const baseCols = isCollege
+    ? `<th>Player</th><th>Lvl</th><th>Pos</th>`
+    : `<th>Player</th><th>Org</th><th>League</th><th>Pos</th>`;
+  thead.innerHTML = `<tr>${baseCols}${cols.map(c=>`<th class="num">${c.label}</th>`).join('')}</tr>`;
 
-  // Build header (use hitting cols as base; pitching cols shown when filtered)
-  const thead = document.getElementById(headId);
-  const buildHead = (cols) => {
-    const baseCols = isCollege
-      ? `<th>Player</th><th>Lvl</th><th>Pos</th>`
-      : `<th>Player</th><th>Org</th><th>League</th><th>Pos</th>`;
-    return `<tr>${baseCols}${cols.map(c=>`<th class="num">${c.label}</th>`).join('')}</tr>`;
-  };
-
-  // Determine which cols to use based on visible rows
-  const currentFilter = document.querySelector(`#${tableId.replace('Table','Filters')} .filter-btn.active`)?.dataset.filter || 'all';
-  let activeCols = hitCols;
-  if (currentFilter === 'Pitching') activeCols = pitCols;
-  thead.innerHTML = buildHead(activeCols);
-
-  // Build rows
-  const body = document.getElementById(bodyId);
-  const allRows = [...hitRows, ...pitRows];
-
-  body.innerHTML = allRows.map(r => {
-    const isHit = r.Type === "Hitting";
-    const cols  = isHit ? hitCols : pitCols;
-
+  tbody.innerHTML = rows.map(r => {
     const baseColsHtml = isCollege
       ? `<td>
            <div class="player-name">${r.Name || ''}</div>
@@ -506,11 +527,11 @@ function renderTable(tableId, headId, bodyId, rows, isCollege) {
 
     const statCols = cols.map(c => {
       const val = r[c.key] || '—';
-      const isHighlight = (c.key === 'AVG' && parseFloat(val) >= 0.350)
-                       || (c.key === 'HR'  && parseInt(val)   >= 5)
-                       || (c.key === 'ERA' && parseFloat(val) <= 2.50 && val !== '—')
-                       || (c.key === 'OPS' && parseFloat(val) >= 0.900)
-                       || (c.key === 'WHIP'&& parseFloat(val) <= 1.10 && val !== '—');
+      const isHighlight = (c.key === 'AVG'  && parseFloat(val) >= 0.350)
+                       || (c.key === 'HR'   && parseInt(val)   >= 5)
+                       || (c.key === 'ERA'  && parseFloat(val) <= 2.50 && val !== '—')
+                       || (c.key === 'OPS'  && parseFloat(val) >= 0.900)
+                       || (c.key === 'WHIP' && parseFloat(val) <= 1.10 && val !== '—');
       return `<td class="num ${isHighlight ? 'stat-highlight' : ''}">${val}</td>`;
     }).join('');
 
@@ -518,43 +539,33 @@ function renderTable(tableId, headId, bodyId, rows, isCollege) {
   }).join('');
 }
 
+// ── Render all four sub-tables for a given level filter ───────────────────────
+function renderAll(levelFilter) {
+  const cf = levelFilter === 'all'
+    ? collegeData
+    : collegeData.filter(r => r.Level === levelFilter);
+
+  renderSubTable('collegeHitHead','collegeHitBody',
+    cf.filter(r => r.Type === 'Hitting'), COL_HIT_COLS, true,
+    'No hitters found for this level.');
+  renderSubTable('collegePitHead','collegePitBody',
+    cf.filter(r => r.Type === 'Pitching'), COL_PIT_COLS, true,
+    'No pitchers found for this level.');
+  renderSubTable('proHitHead','proHitBody',
+    proData.filter(r => r.Type === 'Hitting'), PRO_HIT_COLS, false,
+    'Pro season stats will appear here once the season begins.');
+  renderSubTable('proPitHead','proPitBody',
+    proData.filter(r => r.Type === 'Pitching'), PRO_PIT_COLS, false,
+    'Pro season stats will appear here once the season begins.');
+}
+
 // ── Filter logic ──────────────────────────────────────────────────────────────
 let collegeData = [], proData = [];
-const activeFilters = { college: 'all', pro: 'all' };
 
 function filterTable(section, filter, btn) {
-  // Update active button
-  const filterId = section === 'college' ? 'collegeFilters' : 'proFilters';
-  document.querySelectorAll(`#${filterId} .filter-btn`).forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#collegeFilters .filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  activeFilters[section] = filter;
-
-  const data    = section === 'college' ? collegeData : proData;
-  const tableId = section === 'college' ? 'collegeTable' : 'proTable';
-  const headId  = section === 'college' ? 'collegeHead'  : 'proHead';
-  const bodyId  = section === 'college' ? 'collegeBody'  : 'proBody';
-
-  let filtered = data;
-  if (filter !== 'all') {
-    filtered = data.filter(r => r.Type === filter || r.Level === filter);
-  }
-
-  renderTable(tableId, headId, bodyId, filtered, section === 'college');
-
-  // Update header cols based on filter
-  const isCollege = section === 'college';
-  const thead = document.getElementById(headId);
-  let activeCols;
-  if (filter === 'Pitching') {
-    activeCols = isCollege ? COL_PIT_COLS : PRO_PIT_COLS;
-  } else {
-    activeCols = isCollege ? COL_HIT_COLS : PRO_HIT_COLS;
-  }
-
-  const baseCols = isCollege
-    ? `<th>Player</th><th>Lvl</th><th>Pos</th>`
-    : `<th>Player</th><th>Org</th><th>League</th><th>Pos</th>`;
-  thead.innerHTML = `<tr>${baseCols}${activeCols.map(c=>`<th class="num">${c.label}</th>`).join('')}</tr>`;
+  renderAll(filter);
 }
 
 // ── Load CSVs ─────────────────────────────────────────────────────────────────
@@ -570,7 +581,7 @@ async function loadData() {
     const text = await fetchCSV(COLLEGE_CSV_URL);
     if (text) {
       collegeData = parseCSV(text);
-      renderTable('collegeTable','collegeHead','collegeBody', collegeData, true);
+      renderAll('all');
 
       // Show last updated date
       if (collegeData.length) {
@@ -596,7 +607,7 @@ async function loadData() {
     if (proText) {
       const text = proText;
       proData = parseCSV(text);
-      renderTable('proTable','proHead','proBody', proData, false);
+      renderAll('all');
     }
   } catch(e) {
     document.getElementById('proBody').innerHTML =
