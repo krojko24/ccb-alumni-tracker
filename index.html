@@ -202,7 +202,7 @@
       white-space: nowrap;
     }
 
-    thead th.num { text-align: right; }
+    thead th.num { text-align: center; }
 
     tbody tr {
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -220,7 +220,7 @@
     }
 
     tbody td.num {
-      text-align: right;
+      text-align: center;
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 15px;
       color: var(--white);
@@ -529,13 +529,17 @@ function buildRows(sorted, cols, isCollege) {
   return sorted.map(r => {
     const baseColsHtml = isCollege
       ? `<td>
-           <div class="player-name">${r.Name || ''}</div>
+           <div class="player-name">${r.BioURL
+             ? `<a href="${r.BioURL}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;transition:border-color 0.15s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.4)'">${r.Name || ''}</a>`
+             : r.Name || ''}</div>
            <div class="player-team">${r.Team || ''}</div>
          </td>
          <td><span class="level-badge level-${r.Level}">${r.Level || ''}</span></td>
          <td><span class="type-badge">${r.Position || ''}</span></td>`
       : `<td>
-           <div class="player-name">${r.Name || ''}</div>
+           <div class="player-name">${r.BioURL
+             ? `<a href="${r.BioURL}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;transition:border-color 0.15s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.4)'">${r.Name || ''}</a>`
+             : r.Name || ''}</div>
            <div class="player-team">${r.Team || ''}</div>
          </td>
          <td style="color:var(--muted);font-size:13px">${r.Org || ''}</td>
@@ -599,11 +603,16 @@ function renderAll(levelFilter) {
     ? collegeData
     : collegeData.filter(r => r.Level === levelFilter);
 
+  const hasPlayed = r => {
+    const gp  = parseInt(r.GP  || r.APP || '0');
+    return gp > 0;
+  };
+
   renderSubTable('collegeHitHead','collegeHitBody',
-    cf.filter(r => r.Type === 'Hitting'), COL_HIT_COLS, true,
+    cf.filter(r => r.Type === 'Hitting'  && hasPlayed(r)), COL_HIT_COLS, true,
     'No hitters found for this level.');
   renderSubTable('collegePitHead','collegePitBody',
-    cf.filter(r => r.Type === 'Pitching'), COL_PIT_COLS, true,
+    cf.filter(r => r.Type === 'Pitching' && hasPlayed(r)), COL_PIT_COLS, true,
     'No pitchers found for this level.');
   renderSubTable('proHitHead','proHitBody',
     proData.filter(r => r.Type === 'Hitting'), PRO_HIT_COLS, false,
@@ -705,10 +714,6 @@ document.addEventListener('click', function(e) {
 
 loadData();
 </script>
-
-</body>
-</html>
-
 
 </body>
 </html>
