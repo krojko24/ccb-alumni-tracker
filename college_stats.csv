@@ -1,5 +1,5 @@
 Name,Team,Level,Position,Type,Last Updated,BioURL,AVG,GP,GS,AB,R,H,2B,3B,HR,RBI,SLG,BB,HP,K,OBP,SB,ATT,ERA,W,L,APP,GS_P,SV,IP,H_P,R_P,ER,BB_P,K_P,WHIP
-Jarren Advincula,Georgia Tech,D1,INF,Hitting,2026-03-01,https://ramblinwreck.com/sports/m-basebl/roster/season/2025-26/jarren-advincula/,.389,9,9,36,10,14,0,0,1,12,6,3,3,1.511,1,,,,,,,,,,,,,,,
+Jarren Advincula,Georgia Tech,D1,INF,Hitting,2026-03-01,https://ramblinwreck.com/sports/m-basebl/roster/season/2025-26/jarren-advincula/,.444,11,11,45,14,20,0,0,3,18,7,3,3,1.545,1,,,,,,,,,,,,,,,
 Ian Armstrong,Saint Mary's College,D1,C,Hitting,2026-03-01,https://smcgaels.com/sports/baseball/roster/ian-armstrong/7279,.242,8,8,33,6,8,3,0,1,2,.424,2,0,5,.286,0,0,,,,,,,,,,,,,
 Makoa Sniffen,Saint Mary's College,D1,1B,Hitting,2026-03-01,https://smcgaels.com/sports/baseball/roster/makoa-sniffen/7296,.400,9,9,40,7,16,1,1,4,14,.775,0,1,6,.405,2,3,,,,,,,,,,,,,
 Ian Josephson,Saint Mary's College,D1,INF,Hitting,2026-03-01,https://smcgaels.com/sports/baseball/roster/ian-josephson/7307,.333,4,0,6,2,2,1,0,0,1,.500,0,0,1,.333,1,1,,,,,,,,,,,,,
@@ -36,16 +36,13 @@ Santino Nanez,Skyline,JC,INF,Hitting,2026-03-01,https://www.skylinecollegeathlet
 Vihnson Nguyen,Skyline,JC,C,Hitting,2026-03-01,https://www.skylinecollegeathletics.com/sports/bsb/2025-26/bios/nguyen_vinhson_mkch,.310,13,,29,,9,1,-,-,2,.345,7,1,12,.459,,,,,,,,,,,,,,,
 Nick Tobin,Skyline,JC,1B,Hitting,2026-03-01,https://www.skylinecollegeathletics.com/sports/bsb/2025-26/bios/tobin_nick_kge2,.382,17,,68,,26,7,-,2,19,.574,10,6,7,.500,,,,,,,,,,,,,,,
 Evan Bradshaw,Skyline,JC,INF,Hitting,2026-03-01,https://www.skylinecollegeathletics.com/sports/bsb/2025-26/bios/bradshaw_evan_79vv,.279,13,,43,,12,2,-,-,4,.326,10,-,12,.415,,,,,,,,,,,,,,,
-Jack Ruegg,Skyline,JC,3B,Hitting,2026-03-01,https://www.skylinecollegeathletics.com/sports/bsb/2025-26/bios/ruegg_jack_wus9,.492,16,,59,,29,5,1,-,21,.610,9,3,2,.569,,,,,,,,,,,,,,,
 Matthew Castillo,George Fox,D3,INF,Hitting,2026-03-01,https://athletics.georgefox.edu/sports/baseball/roster/matthew-castillo/9073,.111,7,6,18,1,2,0,0,1,3,.278,0,2,6,.200,0,0,,,,,,,,,,,,,
 John Clinkenbeard,Hartnell,JC,3B,Hitting,2026-03-01,https://hartnellpanthers.com/sports/bsb/2025-26/bios/clinkenbeard_john_fksw,.303,17,,66,,20,7,-,4,23,.591,7,9,20,.439,,,,,,,,,,,,,,,
 Emmet Desmond,Hartnell,JC,C,Hitting,2026-03-01,https://hartnellpanthers.com/sports/bsb/2025-26/bios/desmond_emmet_4ehe,.286,12,,42,,12,4,-,1,10,.452,2,2,9,.348,,,,,,,,,,,,,,,
 Jacob Gilbreath,Gavilan,JC,OF,Hitting,2026-03-01,https://www.gavilanrams.com/sports/bsb/2025-26/bios/gilbreath_jacob_obrq,.366,16,,71,,26,4,2,1,22,.521,5,-,15,.408,,,,,,,,,,,,,,,
 AJ Ljepava, West Valley,JC,OF,Hitting,2026-03-01,https://athletics.westvalley.edu/sports/bsb/2025-26/bios/ljepava_aj_t3v0,.000,7,,5,,0,-,-,-,0,.000,1,-,2,.167,,,,,,,,,,,,,,,
-Carter Johnstone,Vanderbilt,D1,INF,Hitting,2026-03-01,https://vucommodores.com/sports/baseball/roster/season/2025-26/player/carter-johnstone/?_gl=1*1xbhl63*_up*MQ..*_ga*MzU5OTYxNDM2LjE3NzIyMTc0NzE.*_ga_Y29PC3P5S9*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0NzQkajU2JGwwJGgw,3,Carter,,Johnstone,.,1,6,0,7-7,1,1,0,0,1,0,,,,,,,,,,,,,,,
-Carter Johnstone,Vanderbilt,D1,INF,Pitching,2026-03-01,https://vucommodores.com/sports/baseball/roster/season/2025-26/player/carter-johnstone/?_gl=1*1xbhl63*_up*MQ..*_ga*MzU5OTYxNDM2LjE3NzIyMTc0NzE.*_ga_Y29PC3P5S9*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0NzQkajU2JGwwJGgw,,,,,,,,,,,,,,,,,,2,Logan,,Johnstone,11,0,1.000,0,0,0,-,-,-
-Logan Johnstone,Vanderbilt,D1,OF,Hitting,2026-03-01,https://vucommodores.com/sports/baseball/roster/season/2025-26/player/logan-johnstone/?_gl=1*1t10yrt*_up*MQ..*_ga*MzU5OTYxNDM2LjE3NzIyMTc0NzE.*_ga_Y29PC3P5S9*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0OTQkajM2JGwwJGgw*_ga_HQXDGN2415*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0OTQkajM2JGwwJGgw,3,Carter,,Johnstone,.,1,6,0,7-7,1,1,0,0,1,0,,,,,,,,,,,,,,,
-Logan Johnstone,Vanderbilt,D1,OF,Pitching,2026-03-01,https://vucommodores.com/sports/baseball/roster/season/2025-26/player/logan-johnstone/?_gl=1*1t10yrt*_up*MQ..*_ga*MzU5OTYxNDM2LjE3NzIyMTc0NzE.*_ga_Y29PC3P5S9*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0OTQkajM2JGwwJGgw*_ga_HQXDGN2415*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0OTQkajM2JGwwJGgw,,,,,,,,,,,,,,,,,,2,Logan,,Johnstone,11,0,1.000,0,0,0,-,-,-
+Carter Johnstone,Vanderbilt,D1,INF,Pitching,2026-03-01,https://vucommodores.com/sports/baseball/roster/season/2025-26/player/carter-johnstone/?_gl=1*1xbhl63*_up*MQ..*_ga*MzU5OTYxNDM2LjE3NzIyMTc0NzE.*_ga_Y29PC3P5S9*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0NzQkajU2JGwwJGgw,,,,,,,,,,,,,,,,,,2,Logan,,Johnstone,13,0,1.000,0,0,0,-,-,-
+Logan Johnstone,Vanderbilt,D1,OF,Pitching,2026-03-01,https://vucommodores.com/sports/baseball/roster/season/2025-26/player/logan-johnstone/?_gl=1*1t10yrt*_up*MQ..*_ga*MzU5OTYxNDM2LjE3NzIyMTc0NzE.*_ga_Y29PC3P5S9*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0OTQkajM2JGwwJGgw*_ga_HQXDGN2415*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0OTQkajM2JGwwJGgw,,,,,,,,,,,,,,,,,,2,Logan,,Johnstone,13,0,1.000,0,0,0,-,-,-
 Luka Pintar,San Jose State,D1,P,Pitching,2026-03-01,https://sjsuspartans.com/sports/baseball/roster/player/luka-pintar,,,,,,,,,,,,,,,,,,2.00,1,0,2,0,0,9.0,8,2,2,2,9,1.11
 JC Osorio-Agard,San Jose State,D1,INF,Hitting,2026-03-01,https://sjsuspartans.com/sports/baseball/roster/player/jc-osorio-agard,.286,7,7,28,3,8,0,0,1,6,2,1,4,0.344,0,,,,,,,,,,,,,,,
 Sage Romero,West Valley,JC,P,Pitching,2026-03-01,https://athletics.westvalley.edu/sports/bsb/2025-26/bios/romero_sage_2a2l,,,,,,,,,,,,,,,,,,4.50,0,,4,0,0,8.0,8,4,4,2,7,1.25
@@ -90,6 +87,7 @@ Jordan Lewis,San Francisco,D1,OF,Hitting,2026-03-01,https://usfdons.com/sports/b
 Tyler Pina,Colorado School of Mines,D2,C,Hitting,2026-03-01,https://minesathletics.com/sports/baseball/roster/tyler-pina/17942,.286,11,8,28,7,8,0,0,0,11,.286,7,0,2,.429,0,0,,,,,,,,,,,,,
 Ruben Rivera,Menlo College,D2,P,Pitching,2026-03-01,https://menloathletics.com/sports/baseball/roster/ruben-rivera/8518,,,,,,,,,,,,,,,,,,108.00,0,0,2,0,0,0.1,0,6,4,5,0,15.00
 Dominic Rolla,Claremont McKenna,D3,P,Pitching,2026-03-01,https://cmsathletics.org/sports/baseball/roster/dominic-rolla/22536,,,,,,,,,,,,,,,,,,3.48,1,1,3,2,0,10.1,7,4,4,8,7,1.45
+
 
 
 
