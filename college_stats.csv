@@ -1,10 +1,10 @@
 Name,Team,Level,Position,Type,Last Updated,BioURL,AVG,GP,GS,AB,R,H,2B,3B,HR,RBI,SLG,BB,HP,K,OBP,SB,ATT,ERA,W,L,APP,GS_P,SV,IP,H_P,R_P,ER,BB_P,K_P,WHIP
-Luka Pintar,San Jose State,D1,P,Pitching,2026-03-04,https://sjsuspartans.com/sports/baseball/roster/player/luka-pintar,,,,,,,,,,,,,,,,,,4.87,1,0,3,0,0,20.1,22,11,11,5,16,1.34
-Charlie Bates,Stanford,D1,INF,Hitting,2026-03-04,https://gostanford.com/sports/baseball/roster/player/charlie-bates,.339,14,14,56,13,19,5,1,3,10,.607,4,1,9,.393,2,2,,,,,,,,,,,,,
-JC Osorio-Agard,San Jose State,D1,INF,Hitting,2026-03-04,https://sjsuspartans.com/sports/baseball/roster/player/jc-osorio-agard,.323,8,8,31,4,10,0,0,1,6,.419,2,1,4,.371,0,0,,,,,,,,,,,,,
-Jarren Advincula,Georgia Tech,D1,INF,Hitting,2026-03-08,https://ramblinwreck.com/sports/m-basebl/roster/season/2025-26/jarren-advincula/,.389,13,13,54,16,21,0,0,3,18,.556,8,3,4,.492,4,4,,,,,,,,,,,,,
-Ian Armstrong,Saint Mary's College,D1,C,Hitting,2026-03-08,https://smcgaels.com/sports/baseball/roster/ian-armstrong/7279,.220,12,12,50,8,11,3,0,2,6,.400,2,0,8,.250,2,2,,,,,,,,,,,,,
-Makoa Sniffen,Saint Mary's College,D1,1B,Hitting,2026-03-08,https://smcgaels.com/sports/baseball/roster/makoa-sniffen/7296,.345,13,13,58,11,20,1,1,4,16,.603,1,2,6,.371,4,5,,,,,,,,,,,,,
+Luka Pintar,San Jose State,D1,P,Pitching,2026-03-08,https://sjsuspartans.com/sports/baseball/roster/player/luka-pintar,,,,,,,,,,,,,,,,,,4.87,1,0,3,0,0,20.1,22,11,11,5,16,1.34
+Charlie Bates,Stanford,D1,INF,Hitting,2026-03-08,https://gostanford.com/sports/baseball/roster/player/charlie-bates,.339,14,14,56,13,19,5,1,3,10,.607,4,1,9,.393,2,2,,,,,,,,,,,,,
+JC Osorio-Agard,San Jose State,D1,INF,Hitting,2026-03-08,https://sjsuspartans.com/sports/baseball/roster/player/jc-osorio-agard,.323,8,8,31,4,10,0,0,1,6,.419,2,1,4,.371,0,0,,,,,,,,,,,,,
+Jarren Advincula,Georgia Tech,D1,INF,Hitting,2026-03-08,https://ramblinwreck.com/sports/m-basebl/roster/season/2025-26/jarren-advincula/,.354,16,16,65,20,23,0,0,3,19,.492,11,3,6,.463,4,4,,,,,,,,,,,,,
+Ian Armstrong,Saint Mary's College,D1,C,Hitting,2026-03-08,https://smcgaels.com/sports/baseball/roster/ian-armstrong/7279,.231,13,12,52,10,12,3,0,3,7,.462,3,0,9,.273,3,3,,,,,,,,,,,,,
+Makoa Sniffen,Saint Mary's College,D1,1B,Hitting,2026-03-08,https://smcgaels.com/sports/baseball/roster/makoa-sniffen/7296,.349,14,14,63,12,22,2,1,5,21,.651,1,2,8,.373,4,5,,,,,,,,,,,,,
 Ian Josephson,Saint Mary's College,D1,INF,Hitting,2026-03-08,https://smcgaels.com/sports/baseball/roster/ian-josephson/7307,.286,6,0,7,3,2,1,0,0,1,.429,1,0,1,.375,1,1,,,,,,,,,,,,,
 Sam Kretsch,Saint Mary's College,D1,P,Pitching,2026-03-08,https://smcgaels.com/sports/baseball/roster/sam-kretsch/7290,,,,,,,,,,,,,,,,,,5.79,2,0,6,0,2,14.0,12,9,9,8,19,1.43
 Mason Pound,Gavilan,JC,P,Pitching,2026-03-08,https://www.gavilanrams.com/sports/bsb/2025-26/bios/pound_mason_bgyh,,,,,,,,,,,,,,,,,,4.50,2,,6,5,0,30.0,32,16,15,9,13,
@@ -16,7 +16,7 @@ Lucas Schumaker,San Mateo,JC,OF,Hitting,2026-03-08,https://www.csmbulldogs.com/s
 Corbin Giesen,San Mateo,JC,P,Pitching,2026-03-08,https://www.csmbulldogs.com/sports/bsb/2025-26/bios/giesen_corbin_vpvb,,,,,,,,,,,,,,,,,,2.08,2,,6,1,0,13.0,11,3,3,9,11,
 A.J. Minyard,San Mateo,JC,P,Pitching,2026-03-08,https://www.csmbulldogs.com/sports/bsb/2025-26/bios/minyard_a.j._wono ,,,,,,,,,,,,,,,,,,4.60,1,,7,6,1,31.1,34,21,16,5,19,
 Toby Trotter,San Mateo,JC,P,Pitching,2026-03-08,https://www.csmbulldogs.com/sports/bsb/2025-26/bios/trotter_toby_fdlo,,,,,,,,,,,,,,,,,,5.40,0,,6,0,0,15.0,14,9,9,9,18,
-Henry Harding,Holy Cross,D1,P,Pitching,2026-03-08,https://goholycross.com/sports/baseball/roster/henry-harding/17208,,,,,,,,,,,,,,,,,,2.61,1,0,4,0,0,10.1,9,5,3,7,7,1.55
+Henry Harding,Holy Cross,D1,P,Pitching,2026-03-08,https://goholycross.com/sports/baseball/roster/henry-harding/17208,,,,,,,,,,,,,,,,,,4.91,1,0,5,0,0,11.0,11,8,6,9,7,1.82
 Emmett Heath,Pomona Pitzer,D3,P,Hitting,2026-03-08,https://sagehens.com/sports/baseball/roster/emmett-heath/10378,.000,4,0,3,1,0,0,0,0,1,.000,2,0,1,.400,0,0,,,,,,,,,,,,,
 Emmett Heath,Pomona Pitzer,D3,P,Pitching,2026-03-08,https://sagehens.com/sports/baseball/roster/emmett-heath/10378,,,,,,,,,,,,,,,,,,20.25,0,0,2,0,0,1.1,3,3,3,1,0,3.00
 Devin Saltzgaber,Pomona Pitzer,D3,P,Pitching,2026-03-08,https://sagehens.com/sports/baseball/roster/devin-saltzgaber/10477,,,,,,,,,,,,,,,,,,8.40,2,1,7,1,1,15.0,27,16,14,9,14,2.40
@@ -48,52 +48,52 @@ Jacob Gilbreath,Gavilan,JC,OF,Hitting,2026-03-08,https://www.gavilanrams.com/spo
 AJ Ljepava, West Valley,JC,OF,Hitting,2026-03-08,https://athletics.westvalley.edu/sports/bsb/2025-26/bios/ljepava_aj_t3v0,.286,9,,7,3,2,1,-,-,0,.429,1,-,2,.375,,,,,,,,,,,,,,,
 Carter Johnstone,Vanderbilt,D1,INF,Hitting,2026-03-08,https://vucommodores.com/sports/baseball/roster/season/2025-26/player/carter-johnstone/?_gl=1*1xbhl63*_up*MQ..*_ga*MzU5OTYxNDM2LjE3NzIyMTc0NzE.*_ga_Y29PC3P5S9*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0NzQkajU2JGwwJGgw,.156,10,10,32,2,5,1,0,0,2,.188,5,0,6,.263,1,1,,,,,,,,,,,,,
 Logan Johnstone,Vanderbilt,D1,OF,Hitting,2026-03-08,https://vucommodores.com/sports/baseball/roster/season/2025-26/player/logan-johnstone/?_gl=1*1t10yrt*_up*MQ..*_ga*MzU5OTYxNDM2LjE3NzIyMTc0NzE.*_ga_Y29PC3P5S9*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0OTQkajM2JGwwJGgw*_ga_HQXDGN2415*czE3NzIyMTc0NzAkbzEkZzEkdDE3NzIyMTc0OTQkajM2JGwwJGgw,.345,16,16,55,17,19,2,0,5,13,.655,17,1,14,.507,3,5,,,,,,,,,,,,,
-Matthew Rienhardt,Willamette,D3,INF,Hitting,2026-03-08,https://www.wubearcats.com/sports/bsb/2025-26/bios/rienhardt_matthew_im1r,.400,4,,15,1,6,2,1,-,2,.667,1,-,2,.438,1,-,,,,,,,,,,,,,
+Matthew Rienhardt,Willamette,D3,INF,Hitting,2026-03-08,https://www.wubearcats.com/sports/bsb/2025-26/bios/rienhardt_matthew_im1r,.412,5,,17,2,7,2,1,-,2,.647,2,-,2,.474,1,1,,,,,,,,,,,,,
 Sage Romero,West Valley,JC,P,Pitching,2026-03-08,https://athletics.westvalley.edu/sports/bsb/2025-26/bios/romero_sage_2a2l,,,,,,,,,,,,,,,,,,4.50,1,,4,0,0,8.0,8,4,4,2,7,
-Flynn Shoop,Denison,D3,INF,Hitting,2026-03-08,https://denisonbigred.com/sports/baseball/roster/flynn-shoop/11481,.000,3,0,3,0,0,0,0,0,0,.000,0,0,3,.000,0,0,,,,,,,,,,,,,
-Brent Valentine,Chapman,D3,INF,Hitting,2026-03-08,https://athletics.chapman.edu/sports/baseball/roster/brent-valentine/9287,.500,4,1,6,2,3,0,0,0,0,.500,0,0,0,.500,0,0,,,,,,,,,,,,,
-Blake Jacobs,Chapman,D3,INF,Hitting,2026-03-08,https://athletics.chapman.edu/sports/baseball/roster/blake-jacobs/9348,.263,12,12,38,8,10,4,0,0,2,.368,10,2,4,.431,2,2,,,,,,,,,,,,,
+Flynn Shoop,Denison,D3,INF,Hitting,2026-03-08,https://denisonbigred.com/sports/baseball/roster/flynn-shoop/11481,.000,4,0,4,0,0,0,0,0,0,.000,0,0,3,.000,0,0,,,,,,,,,,,,,
+Brent Valentine,Chapman,D3,INF,Hitting,2026-03-08,https://athletics.chapman.edu/sports/baseball/roster/brent-valentine/9287,.286,6,3,14,3,4,0,0,0,1,.286,0,0,1,.286,0,0,,,,,,,,,,,,,
+Blake Jacobs,Chapman,D3,INF,Hitting,2026-03-08,https://athletics.chapman.edu/sports/baseball/roster/blake-jacobs/9348,.244,14,14,45,9,11,4,1,0,3,.378,10,3,4,.407,3,3,,,,,,,,,,,,,
 Aidan Alfers,Occidental,D3,P,Pitching,2026-03-08,https://oxyathletics.com/sports/baseball/roster/aidan-alfers/9434,,,,,,,,,,,,,,,,,,5.28,3,1,5,5,0,29.0,27,20,17,13,17,1.38
 Jackson Short,Occidental,D3,INF/P,Hitting,2026-03-08,https://oxyathletics.com/sports/baseball/roster/jackson-short/9457,.326,13,12,43,8,14,5,0,0,8,.442,2,0,7,.348,0,0,,,,,,,,,,,,,
 Jackson Short,Occidental,D3,INF/P,Pitching,2026-03-08,https://oxyathletics.com/sports/baseball/roster/jackson-short/9457,,,,,,,,,,,,,,,,,,6.14,0,1,2,1,0,7.1,8,6,5,1,8,1.23
 Cole Ayala,Montana State,D2,INF,Hitting,2026-03-08,https://msubsports.com/sports/baseball/roster/cole--ayala/6330,.277,16,14,47,7,13,2,0,3,11,.511,3,4,15,.364,0,1,,,,,,,,,,,,,
-Stuart Cash,Grinnell,D3,INF,Hitting,2026-03-08,https://pioneers.grinnell.edu/sports/baseball/roster/stuart-cash/15304,.409,6,6,22,6,9,2,0,0,1,.500,4,0,3,.500,1,2,,,,,,,,,,,,,
+Stuart Cash,Grinnell,D3,INF,Hitting,2026-03-08,https://pioneers.grinnell.edu/sports/baseball/roster/stuart-cash/15304,.394,8,8,33,10,13,2,0,1,5,.545,4,0,3,.459,3,5,,,,,,,,,,,,,
 David Estrada,West Valley,JC,INF,Hitting,2026-03-08,https://athletics.westvalley.edu/sports/bsb/2025-26/bios/estrada_david_hef7,.279,19,,61,15,17,5,-,1,27,.410,15,4,5,.434,5,-,,,,,,,,,,,,,
 Gabe Gaeckle,Arkansas,D1,P,Pitching,2026-03-08,https://arkansasrazorbacks.com/roster/gabe-gaeckle/,,,,,,,,,,,,,,,,,,2.61,2,1,4,4,0,20.2,21,7,6,6,27,
-Ryan Field,Haverford College,D3,C,Hitting,2026-03-08,https://haverfordathletics.com/sports/baseball/roster/ryan-field/10732,.250,1,1,4,0,1,1,0,0,0,.500,0,0,2,.250,0,0,,,,,,,,,,,,,
-Colin Spear,Pacific,D1,1B,Hitting,2026-03-08,https://pacifictigers.com/sports/baseball/roster/colin-spear/5943,.125,6,2,8,0,1,0,0,0,1,.125,2,0,2,.300,0,0,,,,,,,,,,,,,
+Ryan Field,Haverford College,D3,C,Hitting,2026-03-08,https://haverfordathletics.com/sports/baseball/roster/ryan-field/10732,.333,2,2,6,0,2,1,0,0,0,.500,1,0,2,.429,0,0,,,,,,,,,,,,,
+Colin Spear,Pacific,D1,1B,Hitting,2026-03-08,https://pacifictigers.com/sports/baseball/roster/colin-spear/5943,.200,7,2,10,1,2,1,0,0,1,.300,2,0,3,.333,0,0,,,,,,,,,,,,,
 Nico Rodriguez,Wichita State,D1,INF,Hitting,2026-03-08,https://goshockers.com/sports/baseball/roster/nico-rodriguez/9676,1.000,5,0,1,2,1,1,0,0,0,2.000,0,0,0,1.000,0,0,,,,,,,,,,,,,
 Paul Wheeler,San Francisco,D1,P,Pitching,2026-03-08,https://usfdons.com/sports/baseball/roster/paul-wheeler/6363,,,,,,,,,,,,,,,,,,18.00,0,0,4,0,0,4.0,7,8,8,6,6,3.25
 Lucas Dennis,Pomona Pitzer,D3,P,Pitching,2026-03-08,https://sagehens.com/sports/baseball/roster/lucas-dennis/10262,,,,,,,,,,,,,,,,,,5.68,1,1,5,5,0,19.0,26,15,12,14,16,2.11
-Will Ashley,Middlebury,D3,INF,Hitting,2026-03-08,https://athletics.middlebury.edu/sports/baseball/roster/will-ashley/19928,.300,3,3,10,3,3,2,0,0,2,.500,1,0,1,.364,0,0,,,,,,,,,,,,,
+Will Ashley,Middlebury,D3,INF,Hitting,2026-03-08,https://athletics.middlebury.edu/sports/baseball/roster/will-ashley/19928,.286,4,4,14,4,4,2,0,0,2,.429,1,0,1,.333,0,0,,,,,,,,,,,,,
 Chris Rudell,Westmont College,D2,P,Pitching,2026-03-08,https://athletics.westmont.edu/sports/baseball/roster/chris-rudell/9917,,,,,,,,,,,,,,,,,,19.29,0,0,2,0,0,2.1,6,5,5,1,3,3.00
 JoJo Keldsen,Southeast Missouri,D1,P,Pitching,2026-03-08,https://semoredhawks.com/sports/baseball/roster/jojo-keldsen/12887,,,,,,,,,,,,,,,,,,7.94,0,0,4,0,0,5.2,5,5,5,4,2,
-Mason Lerma,UC Davis,D1,P,Pitching,2026-03-08,https://ucdavisaggies.com/sports/baseball/roster/mason-lerma/20292,,,,,,,,,,,,,,,,,,4.09,1,0,7,0,0,11.0,11,7,5,5,9,1.45
-Ryan Lee,UC Davis,D1,C,Hitting,2026-03-08,https://ucdavisaggies.com/sports/baseball/roster/ryan-lee/20291,.209,13,12,43,5,9,3,0,1,6,.349,7,1,10,.333,0,0,,,,,,,,,,,,,
+Mason Lerma,UC Davis,D1,P,Pitching,2026-03-08,https://ucdavisaggies.com/sports/baseball/roster/mason-lerma/20292,,,,,,,,,,,,,,,,,,3.21,2,0,8,0,0,14.0,11,7,5,5,14,1.14
+Ryan Lee,UC Davis,D1,C,Hitting,2026-03-08,https://ucdavisaggies.com/sports/baseball/roster/ryan-lee/20291,.217,14,13,46,6,10,3,0,1,8,.348,8,2,11,.357,0,0,,,,,,,,,,,,,
 Nate Miller,Redlands,D3,3B,Hitting,2026-03-08,https://goredlands.com/sports/baseball/roster/nate-miller/10281,.290,18,18,62,14,18,6,0,1,12,.435,13,0,13,.413,2,4,,,,,,,,,,,,,
-Alijah Ramos,Cal State East Bay,D2,INF,Hitting,2026-03-08,https://eastbaypioneers.com/sports/baseball/roster/alijah-ramos/5612,.278,18,17,54,12,15,5,1,0,10,.407,13,3,4,.431,2,2,,,,,,,,,,,,,
-Andrew Rocha,Williams College,D3,INF,Hitting,2026-03-08,https://ephsports.williams.edu/sports/baseball/roster/andrew-rocha/16225,.167,5,1,6,1,1,1,0,0,1,.333,2,0,1,.375,0,0,,,,,,,,,,,,,
-Xavier Rios,Cal State Northridge,D1,C,Hitting,2026-03-08,https://gomatadors.com/sports/baseball/roster/xavier-rios/6942,.227,7,6,22,3,5,0,0,2,4,.500,1,0,7,.261,0,0,,,,,,,,,,,,,
+Alijah Ramos,Cal State East Bay,D2,INF,Hitting,2026-03-08,https://eastbaypioneers.com/sports/baseball/roster/alijah-ramos/5612,.305,19,18,59,12,18,5,1,0,11,.424,13,3,4,.442,2,2,,,,,,,,,,,,,
+Xavier Rios,Cal State Northridge,D1,C,Hitting,2026-03-08,https://gomatadors.com/sports/baseball/roster/xavier-rios/6942,.240,8,7,25,3,6,0,0,2,4,.480,1,0,9,.269,0,0,,,,,,,,,,,,,
 Kyle Scritzky,Point Loma Nazarene,D2,P,Pitching,2026-03-08,https://plnusealions.com/sports/baseball/roster/kyle-scritzky/7399,,,,,,,,,,,,,,,,,,6.14,1,0,8,0,0,14.2,15,11,10,8,10,1.57
 Myles Standish,Santa Rosa,JC,P,Pitching,2026-03-08,https://www.srjcathletics.com/sports/bsb/2025-26/bios/standish_myles_81zq,,,,,,,,,,,,,,,,,,1.13,4,,7,2,0,40.0,25,5,5,9,51,
 Craig Yanagihara,Fresno Pacific,D2,P,Pitching,2026-03-08,https://www.fpusunbirds.com/sports/baseball/roster/craig-yanagihara/6982,,,,,,,,,,,,,,,,,,27.00,0,0,2,0,0,1.1,1,4,4,5,3,4.50
 Ethan Bergan,Gonzaga,D1,C,Hitting,2026-03-08,https://gozags.com/sports/baseball/roster/ethan-bergan/6191,.000,2,0,2,0,0,0,0,0,0,.000,0,0,2,.000,0,0,,,,,,,,,,,,,
-AJ Carter,Cal State Stanislaus,D2,OF,Hitting,2026-03-08,https://warriorathletics.com/sports/baseball/roster/aj-carter/8801,.353,14,13,51,13,18,3,2,1,16,.549,1,1,6,.377,4,5,,,,,,,,,,,,,
+AJ Carter,Cal State Stanislaus,D2,OF,Hitting,2026-03-08,https://warriorathletics.com/sports/baseball/roster/aj-carter/8801,.382,15,14,55,14,21,3,2,2,17,.618,1,1,6,.404,4,5,,,,,,,,,,,,,
 AC Cabrera,San Francisco,D1,P,Pitching,2026-03-08,https://usfdons.com/sports/baseball/roster/ac-cabrera/6247,,,,,,,,,,,,,,,,,,22.50,0,0,2,0,0,2.0,7,5,5,1,1,4.00
-Ryan Delaney,Bucknell,D1,P,Pitching,2026-03-08,https://bucknellbison.com/sports/baseball/roster/ryan-delaney/13423,,,,,,,,,,,,,,,,,,3.37,0,0,4,0,0,2.2,5,2,1,0,4,1.88
+Ryan Delaney,Bucknell,D1,P,Pitching,2026-03-08,https://bucknellbison.com/sports/baseball/roster/ryan-delaney/13423,,,,,,,,,,,,,,,,,,11.25,0,0,5,0,0,4.0,9,6,5,1,4,2.50
 Elias Hachem,Erskine,D2,P,Pitching,2026-03-08,https://erskinesports.com/sports/baseball/roster/elias-hachem/9889,,,,,,,,,,,,,,,,,,2.45,1,0,4,0,0,3.2,1,4,1,4,3,1.36
-Ivan Herrera,Lynn,D2,C,Hitting,2026-03-08,https://lynnfightingknights.com/sports/baseball/roster/ivan-herrera/7606,.229,17,13,48,8,11,0,0,0,7,.229,8,4,7,.377,1,1,,,,,,,,,,,,,
+Ivan Herrera,Lynn,D2,C,Hitting,2026-03-08,https://lynnfightingknights.com/sports/baseball/roster/ivan-herrera/7606,.235,18,14,51,9,12,0,0,0,7,.235,9,4,8,.385,2,2,,,,,,,,,,,,,
 Mark Hu,Cal Tech,D3,INF/P,Hitting,2026-03-08,https://gocaltech.com/sports/baseball/roster/mark-hu/6347,.316,16,16,57,9,18,4,0,0,9,.386,5,3,10,.400,2,3,,,,,,,,,,,,,
 Mark Hu,Cal Tech,D3,INF/P,Pitching,2026-03-08,https://gocaltech.com/sports/baseball/roster/mark-hu/6347,,,,,,,,,,,,,,,,,,12.00,0,0,2,0,0,3.0,5,6,4,1,3,2.00
 Jack Killelea,Navy,D1,C,Hitting,2026-03-08,https://navysports.com/sports/baseball/roster/jack-killelea/29055,.000,1,0,1,0,0,0,0,0,0,.000,0,0,1,.000,0,0,,,,,,,,,,,,,
-Hayden Lewis,Nebraska-Omaha,D1,OF/P,Hitting,2026-03-08,https://omavs.com/sports/baseball/roster/hayden-lewis/16784,.235,13,13,51,4,12,0,0,1,6,.294,3,2,13,.304,0,0,,,,,,,,,,,,,
-Jared Lewis,San Francisco,D1,INF,Hitting,2026-03-08,https://usfdons.com/sports/baseball/roster/jared-lewis/6361,.211,9,7,19,2,4,0,0,0,1,.211,4,0,8,.348,0,0,,,,,,,,,,,,,
-Jordan Lewis,San Francisco,D1,OF,Hitting,2026-03-08,https://usfdons.com/sports/baseball/roster/jordan-lewis/6255,.167,8,5,18,2,3,0,0,0,0,.167,4,0,7,.318,1,1,,,,,,,,,,,,,
-Tyler Pina,Colorado School of Mines,D2,C,Hitting,2026-03-08,https://minesathletics.com/sports/baseball/roster/tyler-pina/17942,.286,11,8,28,7,8,0,0,0,11,.286,7,0,2,.429,0,0,,,,,,,,,,,,,
+Hayden Lewis,Nebraska-Omaha,D1,OF/P,Hitting,2026-03-08,https://omavs.com/sports/baseball/roster/hayden-lewis/16784,.241,14,14,54,5,13,0,0,1,6,.296,4,2,13,.317,0,0,,,,,,,,,,,,,
+Jared Lewis,San Francisco,D1,INF,Hitting,2026-03-08,https://usfdons.com/sports/baseball/roster/jared-lewis/6361,.227,10,8,22,3,5,0,0,0,3,.227,5,0,8,.370,0,0,,,,,,,,,,,,,
+Jordan Lewis,San Francisco,D1,OF,Hitting,2026-03-08,https://usfdons.com/sports/baseball/roster/jordan-lewis/6255,.167,9,5,18,2,3,0,0,0,0,.167,4,0,7,.318,1,1,,,,,,,,,,,,,
+Tyler Pina,Colorado School of Mines,D2,C,Hitting,2026-03-08,https://minesathletics.com/sports/baseball/roster/tyler-pina/17942,.323,12,9,31,9,10,0,0,1,13,.419,9,0,2,.475,0,0,,,,,,,,,,,,,
 Ruben Rivera,Menlo College,D2,P,Pitching,2026-03-08,https://menloathletics.com/sports/baseball/roster/ruben-rivera/8518,,,,,,,,,,,,,,,,,,108.00,0,0,2,0,0,0.1,0,6,4,5,0,15.00
 Dominic Rolla,Claremont McKenna,D3,P,Pitching,2026-03-08,https://cmsathletics.org/sports/baseball/roster/dominic-rolla/22536,,,,,,,,,,,,,,,,,,4.11,2,1,4,3,0,15.1,13,9,7,11,13,1.57
 Noah Pang,Menlo College,D2,INF,Hitting,2026-03-08,https://menloathletics.com/sports/baseball/roster/noah-pang/8316,.289,15,12,38,9,11,1,0,1,8,.395,1,3,5,.357,1,1,,,,,,,,,,,,,
 Nolan Rodriguez,Menlo College,D2,P,Pitching,2026-03-08,https://menloathletics.com/sports/baseball/roster/nolan-rodriguez/8053,,,,,,,,,,,,,,,,,,6.16,3,1,4,4,0,19.0,19,14,13,9,15,1.47
+
 
 
 
