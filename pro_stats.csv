@@ -1,5 +1,6 @@
 Name,MLB_ID,Team,Level,Org,League,Position,Type,Last Updated,BioURL,AVG,G,AB,R,H,2B,3B,HR,RBI,SLG,BB,SO,OBP,OPS,SB,ERA,W,L,G_P,GS_P,SV,IP,H_P,R_P,ER,BB_P,SO_P,WHIP
-Luke Keaschall,807712,Minnesota Twins,MLB,Minnesota Twins,American League,INF,Hitting,2026-03-28,https://www.mlb.com/player/luke-keaschall-807712,.333,1,3,0,1,0,0,0,1,.333,0,0,.250,.583,0,,,,,,,,,,,,,
-Trevor Larnach,663616,Minnesota Twins,MLB,Minnesota Twins,American League,OF,Hitting,2026-03-28,https://www.mlb.com/player/trevor-larnach-663616,.000,1,1,0,0,0,0,0,0,.000,0,1,.000,.000,0,,,,,,,,,,,,,
-James Outman,681546,Minnesota Twins,MLB,Minnesota Twins,American League,OF,Hitting,2026-03-28,https://www.mlb.com/player/james-outman-681546,.000,1,0,0,0,0,0,0,0,.000,0,0,.000,.000,0,,,,,,,,,,,,,
-Andrew Vaughn,683734,Milwaukee Brewers,MLB,Milwaukee Brewers,National League,1B,Hitting,2026-03-28,https://www.mlb.com/player/andrew-vaughn-683734,.250,1,4,0,1,0,0,0,1,.250,0,0,.250,.500,0,,,,,,,,,,,,,
+Luke Keaschall,807712,Minnesota Twins,MLB,,American League,INF,Hitting,2026-03-28,https://www.mlb.com/player/luke-keaschall-807712,.143,2,7,0,1,0,0,0,1,.143,0,1,.125,.268,0,,,,,,,,,,,,,
+Trevor Larnach,663616,Minnesota Twins,MLB,,American League,OF,Hitting,2026-03-28,https://www.mlb.com/player/trevor-larnach-663616,.000,2,3,1,0,0,0,0,0,.000,1,1,.250,.250,0,,,,,,,,,,,,,
+James Outman,681546,Minnesota Twins,MLB,,American League,OF,Hitting,2026-03-28,https://www.mlb.com/player/james-outman-681546,.000,2,1,0,0,0,0,0,0,.000,0,0,.000,.000,0,,,,,,,,,,,,,
+Andrew Vaughn,683734,Milwaukee Brewers,MLB,,National League,1B,Hitting,2026-03-28,https://www.mlb.com/player/andrew-vaughn-683734,.250,1,4,0,1,0,0,0,1,.250,0,0,.250,.500,0,,,,,,,,,,,,,
+Lucas Erceg,668674,Kansas City Royals,MLB,,American League,P,Pitching,2026-03-28,https://www.mlb.com/player/lucas-erceg-668674,,,,,,,,,,,,,,,,0.00,0,0,1,0,0,1.0,1,0,0,1,0,2.00
