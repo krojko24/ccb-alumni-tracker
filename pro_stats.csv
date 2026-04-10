@@ -1,25 +1,25 @@
 Name,MLB_ID,Team,Level,Org,League,Position,Type,Last Updated,BioURL,AVG,G,AB,R,H,2B,3B,HR,RBI,SLG,BB,SO,OBP,OPS,SB,ERA,W,L,G_P,GS_P,SV,IP,H_P,R_P,ER,BB_P,SO_P,WHIP
-Luke Keaschall,807712,Minnesota Twins,MLB,,American League,INF,Hitting,2026-04-07,https://www.mlb.com/player/luke-keaschall-807712,.231,10,39,4,9,1,0,1,5,.333,4,6,.295,.628,1,,,,,,,,,,,,,
-Trevor Larnach,663616,Minnesota Twins,MLB,,American League,OF,Hitting,2026-04-07,https://www.mlb.com/player/trevor-larnach-663616,.333,8,15,4,5,2,0,0,2,.467,5,1,.500,.967,0,,,,,,,,,,,,,
-James Outman,681546,Minnesota Twins,MLB,,American League,OF,Hitting,2026-04-07,https://www.mlb.com/player/james-outman-681546,.000,9,12,1,0,0,0,0,0,.000,1,7,.077,.077,2,,,,,,,,,,,,,
-Andrew Vaughn,683734,Milwaukee Brewers,MLB,,National League,1B,Hitting,2026-04-07,https://www.mlb.com/player/andrew-vaughn-683734,.250,1,4,0,1,0,0,0,1,.250,0,0,.250,.500,0,,,,,,,,,,,,,
-Petey Halpin,690984,Columbus Clippers,AAA,Cleveland Guardians,International League,OF,Hitting,2026-04-07,https://www.mlb.com/player/petey-halpin-690984,.206,8,34,5,7,1,0,2,5,.412,4,11,.308,.720,1,,,,,,,,,,,,,
-Tommy Troy,694371,Reno Aces,AAA,Arizona Diamondbacks,Pacific Coast League,INF/OF,Hitting,2026-04-07,https://www.milb.com/player/tommy-troy-694371,.353,8,34,6,12,0,1,0,2,.412,3,12,.410,.822,0,,,,,,,,,,,,,
-Paul Blackburn,621112,New York Yankees,MLB,,American League,P,Pitching,2026-04-07,https://www.mlb.com/player/paul-blackburn-621112,,,,,,,,,,,,,,,,3.00,0,1,2,0,0,3.0,6,2,1,1,2,2.33
-Kris Bubic,663460,Kansas City Royals,MLB,,American League,P,Pitching,2026-04-07,https://www.mlb.com/player/kris-bubic-663460,,,,,,,,,,,,,,,,4.09,1,1,2,2,0,11.0,6,5,5,6,12,1.09
-Lucas Erceg,668674,Kansas City Royals,MLB,,American League,P,Pitching,2026-04-07,https://www.mlb.com/player/lucas-erceg-668674,,,,,,,,,,,,,,,,3.86,0,0,5,0,3,4.2,5,2,2,2,3,1.50
-Hunter Bigge,685801,Durham Bulls,AAA,Tampa Bay Rays,International League,P,Pitching,2026-04-07,https://www.mlb.com/player/hunter-bigge-685801,,,,,,,,,,,,,,,,4.50,0,0,2,0,0,2.0,1,1,1,0,4,0.50
-Willie MacIver,680862,Round Rock Express,AAA,Texas Rangers,Pacific Coast League,C,Hitting,2026-04-07,https://www.mlb.com/player/willie-maciver-680862,.000,5,16,1,0,0,0,0,1,.000,4,7,.238,.238,0,,,,,,,,,,,,,
-Josh Kasevich,688460,Buffalo Bisons,AAA,Toronto Blue Jays,International League,INF,Hitting,2026-04-07,https://www.milb.com/player/josh-kasevich-688460,.269,8,26,4,7,3,0,0,1,.385,3,4,.345,.730,0,,,,,,,,,,,,,
-GJ Hill,677338,Hartford Yard Goats,AA,Colorado Rockies,Eastern League,INF,Hitting,2026-04-07,https://www.milb.com/player/gj-hill-677338,.143,2,7,0,1,1,0,0,0,.286,0,3,.143,.429,0,,,,,,,,,,,,,
-Tanner Murray,695020,Charlotte Knights,AAA,Chicago White Sox,International League,INF,Hitting,2026-04-07,https://www.milb.com/player/tanner-murray-695020,.304,6,23,6,7,1,0,2,7,.609,6,7,.467,1.076,2,,,,,,,,,,,,,
-Lucas Kelly,805220,Everett AquaSox,A+,Seattle Mariners,Northwest League,P,Pitching,2026-04-07,https://www.milb.com/player/lucas-kelly-805220,,,,,,,,,,,,,,,,5.40,0,0,1,0,0,1.2,2,1,1,2,3,2.40
-Zach Morgan,681439,Richmond Flying Squirrels,AA,San Francisco Giants,Eastern League,C,Hitting,2026-04-07,https://www.milb.com/player/zach-morgan-681439,.400,1,5,0,2,1,0,0,2,.600,0,2,.500,1.100,0,,,,,,,,,,,,,
-Jake Holton,687724,Sacramento River Cats,AAA,San Francisco Giants,Pacific Coast League,1B,Hitting,2026-04-07,https://www.milb.com/player/jake-holton-687724,.316,6,19,1,6,1,0,0,6,.368,6,6,.480,.848,0,,,,,,,,,,,,,
-Max Banks,822514,Kannapolis Cannon Ballers,A,Chicago White Sox,Carolina League,P,Pitching,2026-04-07,https://www.milb.com/player/max-banks-822514,,,,,,,,,,,,,,,,0.00,0,0,1,1,0,4.0,4,0,0,0,3,1.00
-Reed Moring,823810,Fort Myers Mighty Mussels,A,Minnesota Twins,Florida State League,P,Pitching,2026-04-07,https://www.milb.com/player/reed-moring-823810,,,,,,,,,,,,,,,,0.00,1,0,1,0,0,4.0,2,0,0,0,7,0.50
-Ian Koenig,701617,San Antonio Missions,AA,San Diego Padres,Texas League,P,Pitching,2026-04-07,https://www.milb.com/player/ian-koenig-701617,,,,,,,,,,,,,,,,5.40,0,1,1,1,0,5.0,4,4,3,0,5,0.80
-Aaron Parker,801590,New Hampshire Fisher Cats,AA,Toronto Blue Jays,Eastern League,C,Hitting,2026-04-07,https://www.milb.com/player/aaron-parker-801590,.333,1,3,1,1,0,0,0,0,.333,3,1,.667,1.000,0,,,,,,,,,,,,,
-Zander Darby,801592,Eugene Emeralds,A+,San Francisco Giants,Northwest League,INF,Hitting,2026-04-07,https://www.milb.com/player/zander-darby-801592,.571,2,7,3,4,1,0,1,2,1.143,0,1,.571,1.714,0,,,,,,,,,,,,,
-
+Luke Keaschall,807712,Minnesota Twins,MLB,,American League,INF,Hitting,2026-04-10,https://www.mlb.com/player/luke-keaschall-807712,.200,13,50,6,10,1,0,1,7,.280,4,8,.255,.535,2,,,,,,,,,,,,,
+Trevor Larnach,663616,Minnesota Twins,MLB,,American League,OF,Hitting,2026-04-10,https://www.mlb.com/player/trevor-larnach-663616,.263,10,19,4,5,2,0,0,2,.368,6,3,.440,.808,0,,,,,,,,,,,,,
+James Outman,681546,Minnesota Twins,MLB,,American League,OF,Hitting,2026-04-10,https://www.mlb.com/player/james-outman-681546,.000,11,14,1,0,0,0,0,0,.000,1,8,.067,.067,2,,,,,,,,,,,,,
+Andrew Vaughn,683734,Milwaukee Brewers,MLB,,National League,1B,Hitting,2026-04-10,https://www.mlb.com/player/andrew-vaughn-683734,.250,1,4,0,1,0,0,0,1,.250,0,0,.250,.500,0,,,,,,,,,,,,,
+Petey Halpin,690984,Columbus Clippers,AAA,Cleveland Guardians,International League,OF,Hitting,2026-04-10,https://www.mlb.com/player/petey-halpin-690984,.200,10,45,6,9,2,0,2,5,.378,4,15,.280,.658,1,,,,,,,,,,,,,
+Tommy Troy,694371,Reno Aces,AAA,Arizona Diamondbacks,Pacific Coast League,INF/OF,Hitting,2026-04-10,https://www.milb.com/player/tommy-troy-694371,.311,11,45,12,14,0,1,0,4,.356,7,13,.407,.763,1,,,,,,,,,,,,,
+Paul Blackburn,621112,New York Yankees,MLB,,American League,P,Pitching,2026-04-10,https://www.mlb.com/player/paul-blackburn-621112,,,,,,,,,,,,,,,,2.25,0,1,3,0,0,4.0,7,2,1,1,3,2.00
+Kris Bubic,663460,Kansas City Royals,MLB,,American League,P,Pitching,2026-04-10,https://www.mlb.com/player/kris-bubic-663460,,,,,,,,,,,,,,,,4.09,1,1,2,2,0,11.0,6,5,5,6,12,1.09
+Lucas Erceg,668674,Kansas City Royals,MLB,,American League,P,Pitching,2026-04-10,https://www.mlb.com/player/lucas-erceg-668674,,,,,,,,,,,,,,,,3.86,0,0,5,0,3,4.2,5,2,2,2,3,1.50
+Hunter Bigge,685801,Durham Bulls,AAA,Tampa Bay Rays,International League,P,Pitching,2026-04-10,https://www.mlb.com/player/hunter-bigge-685801,,,,,,,,,,,,,,,,4.50,0,0,2,0,0,2.0,1,1,1,0,4,0.50
+Willie MacIver,680862,Round Rock Express,AAA,Texas Rangers,Pacific Coast League,C,Hitting,2026-04-10,https://www.mlb.com/player/willie-maciver-680862,.120,8,25,5,3,0,0,1,3,.240,7,8,.353,.593,1,,,,,,,,,,,,,
+Josh Kasevich,688460,Buffalo Bisons,AAA,Toronto Blue Jays,International League,INF,Hitting,2026-04-10,https://www.milb.com/player/josh-kasevich-688460,.242,10,33,4,8,3,0,0,1,.333,3,5,.306,.639,0,,,,,,,,,,,,,
+GJ Hill,677338,Hartford Yard Goats,AA,Colorado Rockies,Eastern League,INF,Hitting,2026-04-10,https://www.milb.com/player/gj-hill-677338,.091,3,11,0,1,1,0,0,0,.182,0,5,.091,.273,0,,,,,,,,,,,,,
+Tanner Murray,695020,Charlotte Knights,AAA,Chicago White Sox,International League,INF,Hitting,2026-04-10,https://www.milb.com/player/tanner-murray-695020,.304,6,23,6,7,1,0,2,7,.609,6,7,.467,1.076,2,,,,,,,,,,,,,
+Lucas Kelly,805220,Everett AquaSox,A+,Seattle Mariners,Northwest League,P,Pitching,2026-04-10,https://www.milb.com/player/lucas-kelly-805220,,,,,,,,,,,,,,,,5.40,0,0,1,0,0,1.2,2,1,1,2,3,2.40
+Zach Morgan,681439,Richmond Flying Squirrels,AA,San Francisco Giants,Eastern League,C,Hitting,2026-04-10,https://www.milb.com/player/zach-morgan-681439,.500,2,6,0,3,1,0,0,3,.667,1,2,.556,1.223,0,,,,,,,,,,,,,
+Drew Dowd,694647,Montgomery Biscuits,AA,Tampa Bay Rays,Southern League,P,Pitching,2026-04-10,https://www.milb.com/player/drew-dowd-694647,,,,,,,,,,,,,,,,0.00,0,0,1,0,0,2.0,1,0,0,2,0,1.50
+Jake Holton,687724,Sacramento River Cats,AAA,San Francisco Giants,Pacific Coast League,1B,Hitting,2026-04-10,https://www.milb.com/player/jake-holton-687724,.286,7,21,2,6,1,0,0,6,.333,8,7,.483,.816,0,,,,,,,,,,,,,
+Max Banks,822514,Kannapolis Cannon Ballers,A,Chicago White Sox,Carolina League,P,Pitching,2026-04-10,https://www.milb.com/player/max-banks-822514,,,,,,,,,,,,,,,,0.00,0,0,2,2,0,8.0,5,0,0,1,10,0.75
+Reed Moring,823810,Fort Myers Mighty Mussels,A,Minnesota Twins,Florida State League,P,Pitching,2026-04-10,https://www.milb.com/player/reed-moring-823810,,,,,,,,,,,,,,,,0.00,1,0,2,1,0,8.0,5,0,0,3,12,1.00
+Ian Koenig,701617,San Antonio Missions,AA,San Diego Padres,Texas League,P,Pitching,2026-04-10,https://www.milb.com/player/ian-koenig-701617,,,,,,,,,,,,,,,,5.40,0,1,1,1,0,5.0,4,4,3,0,5,0.80
+Aaron Parker,801590,New Hampshire Fisher Cats,AA,Toronto Blue Jays,Eastern League,C,Hitting,2026-04-10,https://www.milb.com/player/aaron-parker-801590,.200,3,10,4,2,0,0,0,0,.200,5,4,.467,.667,0,,,,,,,,,,,,,
+Zander Darby,801592,Eugene Emeralds,A+,San Francisco Giants,Northwest League,INF,Hitting,2026-04-10,https://www.milb.com/player/zander-darby-801592,.450,5,20,5,9,2,0,1,2,.700,0,5,.450,1.150,1,,,,,,,,,,,,,
 
